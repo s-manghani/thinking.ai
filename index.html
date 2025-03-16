@@ -3,60 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thinking AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thinking AI | University of Southampton</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 2em;
+            line-height: 1.6;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .container {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+        h1, h2 {
+            font-weight: normal;
         }
 
-        h1 {
-            color: #222;
-            margin-bottom: 15px;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5em 0;
         }
 
-        p {
-            color: #555;
-            margin-bottom: 20px;
+        .graph-section {
+            margin-top: 4em;
         }
 
-        a {
+        iframe {
+            width: 100%;
+            height: 850px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .legend {
+            margin: 1em 0;
+            font-size: 0.9em;
+        }
+
+        .legend span {
             display: inline-block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: #0066cc;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 5px;
+            vertical-align: middle;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Thinking AI</h1>
-        <p>Welcome to Thinking AI – a hub for AI-related research, reports, and critical reflections.</p>
-        <p>We are currently developing our platform. Stay tuned for updates.</p>
-        <a href="network_graph.html">See preliminary 'knowledge graph' based on research outputs listed on ePrints</a>
+
+    <h1>Welcome to Thinking AI</h1>
+    <p>This is a placeholder webpage to announce the start of what will hopefully be a rewarding, productive and community-led initiative of the Faculty of Arts and Humanities at University of Southampton.</p>
+
+    <p>The site is aimed at staff and students of the Faculty – to provide a context for learning, sharing and research, including the development of a shared knowledge base (see data visualisation at the end of the page). The site is also public, to encourage a community of practice and to document a live, ongoing exploration of the growing significance of Artificial Intelligence (AI) in the Higher Education sector, across all activities of research, education, enterprise and infrastructure.</p>
+
+    <p>The project aligns with and will help inform AI@Southampton – an online space led by the Web Science Institute, which has been established for faculties and other groups to come together, collaborate, and share work that involves artificial intelligence as part of their research.</p>
+
+    <p>Interdisciplinary AI is a University strategic priority, along with data in society, platform governance, social trust, democratic innovation, technological sustainability and other AI-related topics that form WSI’s unique socio-technical remit. It is vital that multiple perspectives from within and across the arts and humanities have a stake in what comes next…</p>
+
+    <img src="approach.png" alt="Approach illustration">
+
+    <h2>Approach</h2>
+    <p>Faculty-wide and University-facing. A collaborative initiative to engage critically with artificial intelligence within the domains of education, research, and enterprise, as well as educational administration and infrastructure.</p>
+
+    <p>Underpinned by a commitment to Responsible AI—not just in the immediate ethical sense, but in terms of institutional responsibility for shaping AI’s future role in higher education.</p>
+
+    <p><em>NB:</em> The phrase ‘Thinking AI’ is intended to recall Victor Burgin's <em>Thinking Photography</em> (1982), which sought to establish a theoretical account of photography beyond aesthetic appreciation or technical documentation. Burgin recognized that despite photography's century-long history, a coherent theoretical framework remained underdeveloped. We find ourselves with AI at a comparable ‘critical juncture’.</p>
+
+    <p>Current discussions largely oscillate between technical specifications on one hand, and ethical concerns on the other. What is missing is a rigorous analysis of AI as a socio-material set of practices and contestations. The topic of AI needs sensitivity and openness, as much as it warrants the richness of critical debate and practical exploration.</p>
+
+    <!-- Network Graph Section -->
+    <div class="graph-section">
+        <h2>Shared Knowledge Base</h2>
+        <p><strong>Hover over nodes to access research outputs via ePrints.</strong></p>
+        <p>Graph includes 317 research outputs (2024 - present)</p>
+
+        <div class="legend">
+            <span style="background-color:#377eb8;"></span> Low frequency (1–4) &nbsp;
+            <span style="background-color:#ff7f00;"></span> Medium frequency (5–9) &nbsp;
+            <span style="background-color:#e41a1c;"></span> High frequency (10+)
+        </div>
+
+        <iframe src="network_graph.html" title="Network Graph"></iframe>
     </div>
+
 </body>
 
 </html>
