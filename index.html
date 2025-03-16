@@ -10,11 +10,21 @@
             font-family: Arial, sans-serif;
             background-color: #ffffff;
             color: #000000;
-            margin: 2em;
+            margin: 0;
+            padding: 2em;
             line-height: 1.6;
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.5em;
+            }
+            img {
+                width: 100% !important;
+            }
         }
 
         h1, h2 {
@@ -22,9 +32,10 @@
         }
 
         img {
-            max-width: 100%;
+            width: 60%;
             height: auto;
-            margin: 1.5em 0;
+            display: block;
+            margin: 1.5em auto;
         }
 
         .graph-section {
@@ -51,6 +62,20 @@
             margin-right: 5px;
             vertical-align: middle;
         }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 
@@ -59,7 +84,7 @@
     <h1>Welcome to Thinking AI</h1>
     <p>This is a placeholder webpage to announce the start of what will hopefully be a rewarding, productive and community-led initiative of the Faculty of Arts and Humanities at University of Southampton.</p>
 
-    <p>The site is aimed at staff and students of the Faculty – to provide a context for learning, sharing and research, including the development of a shared knowledge base (see data visualisation at the end of the page). The site is also public, to encourage a community of practice and to document a live, ongoing exploration of the growing significance of Artificial Intelligence (AI) in the Higher Education sector, across all activities of research, education, enterprise and infrastructure.</p>
+    <p>The site is aimed at staff and students of the Faculty – to provide a context for learning, sharing and research, including the development of a <a href="#graph">shared knowledge base</a>. The site is also public, to encourage a community of practice and to document a live, ongoing exploration of the growing significance of Artificial Intelligence (AI) in the Higher Education sector, across all activities of research, education, enterprise and infrastructure.</p>
 
     <p>The project aligns with and will help inform AI@Southampton – an online space led by the Web Science Institute, which has been established for faculties and other groups to come together, collaborate, and share work that involves artificial intelligence as part of their research.</p>
 
@@ -77,7 +102,7 @@
     <p>Current discussions largely oscillate between technical specifications on one hand, and ethical concerns on the other. What is missing is a rigorous analysis of AI as a socio-material set of practices and contestations. The topic of AI needs sensitivity and openness, as much as it warrants the richness of critical debate and practical exploration.</p>
 
     <!-- Network Graph Section -->
-    <div class="graph-section">
+    <div class="graph-section" id="graph">
         <h2>Shared Knowledge Base</h2>
         <p><strong>Hover over nodes to access research outputs via ePrints.</strong></p>
         <p>Graph includes 317 research outputs (2024 - present)</p>
@@ -89,6 +114,10 @@
         </div>
 
         <iframe src="network_graph.html" title="Network Graph"></iframe>
+
+        <div class="back-to-top">
+            <a href="#">Back to top ↑</a>
+        </div>
     </div>
 
 </body>
